@@ -1,0 +1,13 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  & > .dashboard__header {
+    display: flex;
+    margin: 2rem;
+
+    & > .dashboard__logo {
+      width: 100px;
+      margin-right: 2rem;
+    }
+  }
+}

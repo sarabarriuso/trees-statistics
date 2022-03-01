@@ -1,0 +1,11 @@
+.tree-chart {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  .tree-chart__filters {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}

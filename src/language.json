@@ -1,0 +1,23 @@
+{
+  "app": {
+    "appHeader": "Tree Planting Statistics",
+    "errorMessages": {
+      "standard": "Sorry, there's been a problem, please try again."
+    },
+    "toasts": {
+      "loadTreesDataFailure": "Sorry, there's been a problem while trying to count our planted trees."
+    },
+    "treeChart": {
+      "filters": {
+        "filtersDescription": "Please select the time range for the graph",
+        "fromYear": "From year:",
+        "toYear": "To year:",
+        "fromMonth": "From month:",
+        "toMonth": "To month:"
+      },
+      "chart": {
+        "title": "Trees planted per day"
+      }
+    }
+  }
+}

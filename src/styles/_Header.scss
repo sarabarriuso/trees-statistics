@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  box-shadow: 0 2px 8px 0 $ecologi-dark-green-transp;
+  flex-wrap: wrap;
+  & > .header__logo {
+    min-width: 80px;
+    width: 100px;
+    margin: 2rem;
+    flex-grow: 0;
+    color: $ecologi-dark-green;
+  }
+
+  & > .header__title {
+    color: $ecologi-dark-green;
+  }
+
+  &:before {
+    height: 100px;
+    content: '';
+    width: 100%;
+    background-size: 500px;
+    background-image: url('../assets/images/mountains-background.svg');
+    background-repeat: repeat-x;
+    opacity: 0.35;
+    top: 35px;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+  }
+}

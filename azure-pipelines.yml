@@ -1,0 +1,57 @@
+# Azure Pipelines continuous integration configuration
+
+variables:
+  site: web-smart-export
+  YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+
+trigger:
+  - main
+# Don't fetch the whole repository history
+resources:
+  - repo: self
+    fetchDepth: 1
+
+# Build host
+pool:
+  # A small shell script is required to link devDependencies' binaries. This
+  # shell script is written for Bash, so the build must be run on a *nix host.
+  #name: Hosted Ubuntu 1604
+  name: Hosted Windows 2019 with VS2019
+
+# Build steps
+steps:
+  # Install root package dependencies
+  - script: |
+      yarn --network-timeout 120000
+    displayName: 'Install root package dependencies, use Cache if available'
+
+  # Lint the site
+  - script: |
+      yarn lint
+    displayName: 'Lint site'
+
+  # Test the site
+  - script: |
+      yarn test:ci
+    displayName: 'Test site'
+
+  # Build the site
+  - script: |
+      yarn build
+    displayName: 'Build site'
+
+  # Publish build output
+  - task: PublishBuildArtifacts@1
+    displayName: Publish build output
+    inputs:
+      PathtoPublish: build
+      ArtifactName: dist
+      parallel: true
+
+  # Publish deployment configuration for Azure
+  - task: PublishBuildArtifacts@1
+    displayName: Publish deployment configuration
+    inputs:
+      PathtoPublish: deployment
+      ArtifactName: deployment
+      parallel: true
