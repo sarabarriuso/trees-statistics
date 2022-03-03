@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TreeChart Index Tests Renders successfully when there is not tree data 1`] = `
+<div
+  className="tree-chart"
+>
+  <h2>
+    Trees planted per day
+  </h2>
+  <p>
+     
+    Please select a time range:
+  </p>
+  <div
+    className="tree-chart__filters"
+  >
+    <MonthSelector
+      defaultYear={2019}
+      description="From year:"
+      yearSelectedCallback={[Function]}
+    />
+    <MonthSelector
+      defaultMonth={1}
+      description="From month:"
+      monthSelectedCallback={[Function]}
+    />
+    <MonthSelector
+      defaultYear={2019}
+      description="To year:"
+      minYear={2019}
+      yearSelectedCallback={[Function]}
+    />
+    <MonthSelector
+      defaultMonth={12}
+      description="To month:"
+      monthSelectedCallback={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`TreeChart Index Tests Renders successfully when there is tree data 1`] = `
+<div
+  className="tree-chart"
+>
+  <h2>
+    Trees planted per day
+  </h2>
+  <p>
+     
+    Please select a time range:
+  </p>
+  <div
+    className="tree-chart__filters"
+  >
+    <MonthSelector
+      defaultYear={2019}
+      description="From year:"
+      yearSelectedCallback={[Function]}
+    />
+    <MonthSelector
+      defaultMonth={1}
+      description="From month:"
+      monthSelectedCallback={[Function]}
+    />
+    <MonthSelector
+      defaultYear={2019}
+      description="To year:"
+      minYear={2019}
+      yearSelectedCallback={[Function]}
+    />
+    <MonthSelector
+      defaultMonth={12}
+      description="To month:"
+      monthSelectedCallback={[Function]}
+    />
+  </div>
+  <TreeLineChart
+    chartData={
+      Array [
+        Object {
+          "count": 125,
+          "date": 1972-10-20T18:18:56.789Z,
+        },
+        Object {
+          "count": 479,
+          "date": 1972-10-21T00:13:56.748Z,
+        },
+        Object {
+          "count": 741,
+          "date": 1972-10-20T06:59:07.789Z,
+        },
+        Object {
+          "count": 239,
+          "date": 1972-10-21T00:17:13.786Z,
+        },
+        Object {
+          "count": 846,
+          "date": 1972-10-26T16:23:53.235Z,
+        },
+      ]
+    }
+  />
+</div>
+`;

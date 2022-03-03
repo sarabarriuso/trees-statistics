@@ -1,0 +1,91 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": ["react", "react-hooks", "jsx-a11y"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    // suppress errors for missing 'import React' in files
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    // https://eslint.org/docs/rules/
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "ignore",
+        "prop": "ignore"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "eqeqeq": "error",
+    "default-case": "error",
+    "guard-for-in": "warn",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-alert": "error",
+    "no-console": 2,
+    "no-self-compare": "error",
+    "no-unused-expressions": "error",
+    "prefer-promise-reject-errors": "error",
+    "radix": "error",
+    "yoda": "error",
+    "array-bracket-spacing": "error",
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": "error",
+    "no-bitwise": "error",
+    "no-multiple-empty-lines": "error",
+    "no-nested-ternary": "error",
+    "one-var-declaration-per-line": "error",
+    "semi": "error",
+    "semi-style": ["error", "last"],
+    "no-var": "error",
+    "no-duplicate-imports": "error",
+    "no-useless-rename": "error",
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true // Ensure compatibility with React.memo.
+      }
+    ],
+    "prefer-const": "error",
+    "prefer-spread": "error",
+    "jsx-quotes": ["error", "prefer-single"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

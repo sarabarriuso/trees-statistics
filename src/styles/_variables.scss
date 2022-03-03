@@ -1,0 +1,12 @@
+$mobile-breakpoint: 425px;
+$mobile-breakpoint-mobile-first: $mobile-breakpoint + 1px; // This breakpoint was added for mobile-first styles. Before, a breakpoint with a min-width of 425px would mean mobiles would still see the tablet view.
+$tablet-breakpoint: 768px;
+$tablet-breakpoint-mobile-first: $tablet-breakpoint + 1px; // This breakpoint was added for mobile-first styles. Before, a breakpoint with a min-width of 768px would mean tablets would still see the desktop view.
+$desktop-breakpoint: 1024px;
+$large-desktop-breakpoint: 1280px;
+$heading-font-bold: 'Sharp Sans Bold', 'Helvetica', sans-serif;
+$body-font: 'Roboto', sans-serif;
+$standard-border-radius: 3px;
+$standard-border-size: 3px;
+$readable-max-width: 40rem;
+$disabled-opacity: 0.25;

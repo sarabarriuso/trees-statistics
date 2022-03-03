@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  src: url(../assets/fonts/Roboto-Italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto-Bold.woff2) format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto-BoldItalic.woff2) format('woff2');
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  color: $ecologi-black;
+  font-weight: bold;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: $ecologi-black;
+  font-weight: bold;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  padding: 1.5rem 3rem;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}

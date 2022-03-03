@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Month Selector Index Tests Renders successfully  1`] = `
+<div
+  className="month-selector"
+>
+  <p>
+    Hi I am a description
+  </p>
+  <ForwardRef(Slider)
+    aria-label="Day"
+    defaultValue={1}
+    marks={
+      Array [
+        Object {
+          "label": "Jan",
+          "value": 1,
+        },
+        Object {
+          "label": "Feb",
+          "value": 2,
+        },
+        Object {
+          "label": "Mar",
+          "value": 3,
+        },
+        Object {
+          "label": "Apr",
+          "value": 4,
+        },
+        Object {
+          "label": "May",
+          "value": 5,
+        },
+        Object {
+          "label": "Jun",
+          "value": 6,
+        },
+        Object {
+          "label": "Jul",
+          "value": 7,
+        },
+        Object {
+          "label": "Aug",
+          "value": 8,
+        },
+        Object {
+          "label": "Sep",
+          "value": 9,
+        },
+        Object {
+          "label": "Oct",
+          "value": 10,
+        },
+        Object {
+          "label": "Nov",
+          "value": 11,
+        },
+        Object {
+          "label": "Dec",
+          "value": 12,
+        },
+      ]
+    }
+    max={12}
+    min={1}
+    onChangeCommitted={[Function]}
+    step={1}
+    track={false}
+    valueLabelDisplay="auto"
+  />
+</div>
+`;

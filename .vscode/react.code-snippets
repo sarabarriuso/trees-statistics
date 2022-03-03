@@ -1,0 +1,25 @@
+{
+  "Functional Component": {
+    "description": "Create a standardised React Functional Component.",
+    "prefix": "rfc",
+    "body": "import React from 'react';\n\ninterface I${1}Props {\n}\n\nconst ${1}: React.FC<I${1}Props> = ({\n}) => {\n\treturn (\n\t\t<div className='component-name'>\n\t\t</div>\n\t);\n};\n\nexport default ${1};"
+  },
+  "UseState React Hook": {
+    "description": "React useState() hook",
+    "prefix": "ust",
+    "body": [
+      "  const [$1, set${1/(.*)/${1:/capitalize}/}] = React.useState<$2>($3);"
+    ]
+  },
+  "UseCallback React Hook": {
+    "description": "React useCallback() hook",
+    "prefix": "ucb",
+    "body": [
+      "const ${1:memoizedCallback} = React.useCallback(() => {",
+      "\t\t${2:doSomething}(${3:a})",
+      "\t},",
+      "\t[${5:a}],",
+      ");$0"
+    ]
+  }
+}
