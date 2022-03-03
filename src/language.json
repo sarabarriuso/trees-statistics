@@ -7,9 +7,12 @@
     "toasts": {
       "loadTreesDataFailure": "Sorry, there's been a problem while trying to count our planted trees."
     },
+    "dashboard": {
+      "loadingData": "Counting trees..."
+    },
     "treeChart": {
       "filters": {
-        "filtersDescription": "Please select the time range for the graph",
+        "instructions": "Please select a time range:",
         "fromYear": "From year:",
         "toYear": "To year:",
         "fromMonth": "From month:",

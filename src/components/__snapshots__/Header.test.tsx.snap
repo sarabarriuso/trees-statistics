@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Tests Renders successfully 1`] = `
+<div
+  className="header"
+>
+  <ForwardRef(SvgEcologiLogo)
+    className="header__logo"
+  />
+  <h1
+    className="header__title"
+  >
+    🌳
+    Tree Planting Statistics
+  </h1>
+  <div
+    className="header__background"
+  />
+</div>
+`;

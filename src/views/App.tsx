@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import { loadTreesData } from '../models/ecologiServiceModel';
 
 import '../styles/Main.scss';
+import { loadTreesData } from '../models/ecologiServiceModel';
 import DashboardView from './DashboardView';
 
 function App(): JSX.Element {
@@ -15,7 +15,6 @@ function App(): JSX.Element {
   return (
     <div className={DEFAULT_CLASSNAME}>
       <Router>
-        {/* <AppBanner /> */}
         <Switch>
           <Route path='/' exact>
             <DashboardView />

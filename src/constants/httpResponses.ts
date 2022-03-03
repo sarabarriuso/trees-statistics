@@ -1,3 +1,1 @@
 export const HTTP_STATUS_NO_CONTENT = 204;
-export const HTTP_STATUS_BAD_REQUEST = 400;
-export const HTTP_STATUS_NOT_FOUND = 404;

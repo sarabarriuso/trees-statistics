@@ -9,6 +9,8 @@ import { IEcologiTreeDataResponse } from '../interfaces/responses/IEcologiTreeDa
 import { IPlantedTreeData } from '../interfaces/IPlantedTreeData';
 
 export function loadTreesData(): void {
+  dispatch(treesActionCreators.setLoadingPlantedTreesData(true));
+
   getPlantedTreesData()
     .then((data: IEcologiTreeDataResponse) => {
       const groupedByDateData = groupTreesByDay(data.data);
@@ -20,6 +22,9 @@ export function loadTreesData(): void {
         `ecologiServiceModel.loadTreesData: unexpected error occured: ${e.message}`,
       );
       errorToast(String.Format(t.text('app.toasts.loadTreesDataFailure')));
+    })
+    .finally(() => {
+      dispatch(treesActionCreators.setLoadingPlantedTreesData(false));
     });
 }
 

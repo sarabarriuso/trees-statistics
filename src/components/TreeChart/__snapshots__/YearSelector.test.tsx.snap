@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Year Selector Index Tests Renders successfully  1`] = `
+<div
+  className="year-selector"
+>
+  <p>
+    Hi I am a description
+  </p>
+  <ForwardRef(Slider)
+    aria-label="Day"
+    defaultValue={1}
+    marks={
+      Array [
+        Object {
+          "label": "2019",
+          "value": 2019,
+        },
+        Object {
+          "label": "2020",
+          "value": 2020,
+        },
+        Object {
+          "label": "2021",
+          "value": 2021,
+        },
+        Object {
+          "label": "2022",
+          "value": 2022,
+        },
+      ]
+    }
+    max={2022}
+    min={2019}
+    onChangeCommitted={[Function]}
+    step={1}
+    track={false}
+    valueLabelDisplay="auto"
+  />
+</div>
+`;

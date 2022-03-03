@@ -1,4 +1,9 @@
 .month-selector {
-  margin: 2rem;
-  width: 30rem;
+  margin: 0.5rem;
+  width: 20rem;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin: 1rem;
+    width: 30rem;
+  }
 }

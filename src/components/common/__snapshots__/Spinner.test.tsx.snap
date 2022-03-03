@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner Tests Renders successfully 1`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="spinner__wrap"
+  >
+    <ForwardRef(SvgSpinner)
+      className="spinner__svg"
+    />
+    <p>
+      Spinner caption
+    </p>
+  </div>
+</div>
+`;

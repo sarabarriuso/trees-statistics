@@ -14,7 +14,7 @@ export function getPlantedTreesData(): Promise<IEcologiTreeDataResponse> {
         resolve(data);
       })
       .catch((e: ResponseError) => {
-        reject(e);
+        reject(e.message);
       });
   });
 }
